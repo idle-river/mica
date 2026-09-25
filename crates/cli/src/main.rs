@@ -1,4 +1,4 @@
 #[tokio::main]
 async fn main() {
-    println!("{}", mica_core::add(1, 2))
+    println!("{}", starter_core::add(1, 2))
 }
