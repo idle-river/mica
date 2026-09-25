@@ -1,6 +1,7 @@
-[package]
-name = "rust-starter"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["crates/*"]
+resolver = "3"
 
-[dependencies]
+[workspace.dependencies]
+tokio = { version = "1.53.1", features = ["full"] }
+mica-core = { path = "./crates/core" }
